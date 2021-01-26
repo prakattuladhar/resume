@@ -1,0 +1,200 @@
+@media print {
+    @page {
+        size: 210mm 297mm;
+        /* landscape */
+        /* you can also specify margins here: */
+        margin: 25mm;
+        /* margin-right: 45mm; */
+        /* for compatibility with both A4 and Letter */
+    }
+}
+
+/* @font-face {
+    font-family: Calib;
+    src: url(Calibri.ttf);
+} */
+
+@font-face {
+    font-family: Calib;
+    src: url('./assets/OpenSans-Regular.ttf');
+
+
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: calc(100vw * 0.77); */
+}
+
+p,
+li,
+span {
+    font-size: 10.5pt;
+}
+
+p {
+    margin: 0;
+
+
+}
+
+.header {
+    background-color: lightslategray;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+h1 {
+    font-family: Calib;
+    font-weight: 100;
+    /* font-size: 16pt; */
+}
+
+.name h1 {
+
+    color: white;
+    align-items: center;
+    margin-left: 20px;
+    margin: 0px;
+}
+
+.name {
+    width: 50%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    line-height: 1.6em;
+
+
+}
+
+.contact {
+    /* float: right; */
+}
+
+.contact ul {
+    list-style-type: none;
+
+}
+
+.contact li {
+    color: white;
+    font-family: Calib;
+    font-weight: 100;
+
+}
+
+.bodyContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    align-content: flex-start;
+    /* height: 100%; */
+    ;
+}
+
+.mainPane {
+    /* background-color: lightblue; */
+    width: 68%;
+    /* height: 500px; */
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.contactPane {
+    margin: 0;
+    padding: 2%;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border-left: 3px solid lightslategray; */
+    width: 26%;
+    /* height: 100%; */
+    ;
+
+}
+
+.contactPane ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.subHeadingsPane {
+    font-family: Calib;
+    font-weight: 100;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+
+}
+
+.line {
+    border-top: 1px solid grey;
+    width: 100%;
+    height: 10px;
+}
+
+.subHeadingsPane h3,
+h4 {
+
+    margin: 0;
+}
+
+.skillList {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: flex-start;
+    margin-left: 20px;
+}
+
+.skillList li {
+    width: 40%;
+    margin: 5px;
+}
+
+.subHeadingsPane hr {
+    margin-right: 20px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.date {
+    width: 12%;
+    /* background-color: aqua; */
+}
+
+.ConDateSection {
+    display: flex;
+    width: 100%;
+
+}
+
+.details {
+    margin-left: 3%;
+}
+
+.details p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 5px
+}
